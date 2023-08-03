@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Desafio3 {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Digite a operação desejada ");
+        System.out.println("1- Soma, 2- Subtração, 3- Multiplicação, 4- Divisão:");
+        int x = input.nextInt(), num1, num2;
+        double a, b;
+        
+      
+        //Soma
+
+        if(x == 1){
+            System.out.println("Soma");
+            System.out.println("Digite o primeiro número:");
+            num1 = input.nextInt();
+            System.out.println("Digite o segundo número: ");
+            num2 = input.nextInt();
+            int soma = num1+num2;
+            System.out.println("O resultado de " + num1 +" + " + num2 + " é: " + soma);
+        }
+
+        //Subtração
+
+        else if(x == 2){
+            System.out.println("Subtração");
+            System.out.println("Digite o primeiro número:");
+            num1 = input.nextInt();
+            System.out.println("Digite o segundo número: ");
+            num2 = input.nextInt();
+            int subtracao = num1-num2;
+            System.out.println("O resultado de " + num1 +" - " + num2 + " é: " + subtracao);
+        }
+
+        //Multiplicação
+
+         else if(x == 3){
+            System.out.println("Multiplicação");
+            System.out.println("Digite o primeiro número:");
+            num1 = input.nextInt();
+            System.out.println("Digite o segundo número: ");
+            num2 = input.nextInt();
+            int multiplicacao = num1*num2;
+            System.out.println("O resultado de " + num1 +" * " + num2 + " é: " + multiplicacao);
+        }
+
+        //Divisão
+
+         else if(x == 4){
+            System.out.println("Divisão");
+            System.out.println("Digite o primeiro número:");
+            a = input.nextInt();
+            System.out.println("Digite o segundo número: ");
+            b = input.nextInt();
+            double divisao = a/b;
+            System.out.println("O resultado de " + a +" / " + b + " é: " + divisao);
+        }
+
+        else{
+            System.out.println("Por favor digite uma operação de 1 a 4");
+        }
+
+    }
+}
